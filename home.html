@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="laravel.png">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Latest compiled and minified CSS -->
+
+    <!-- jQuery library -->
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="border:1px solid #337ab7;width: 600px;">
+            <div class="col-md-12">
+                <nav class="navbar" style="border:1px solid; color:white; background-color: #337ab7;">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" style="color:white" href="#">JD</a>
+                    </div>
+                </nav>
+                <form method="POST" class="getForm">
+                    <!-- @csrf -->
+                    <div class="form-group">
+                        <input type="text" class="form-control string" name="string"
+                            placeholder="String to hash password" id="hashpassword">
+                        <span class="error error-string text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="getHashshow" style="border:1px solid #337ab7;padding:10px;display:none">
+                            <span class="getHash"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary submit-get-hash">Submit</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                    </div>
+                </form>
+                <footer
+                    style="border:1px solid; color:white; background-color: #337ab7;text-align: center;padding:10px;">
+                    copyright @JD
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="content.js"></script>
+
+</html>
